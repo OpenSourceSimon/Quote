@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     rs = requests.get("https://api.quotable.io/random")
     data = rs.json()
-
+ 
     # Get a random background image from source.unsplash.com
     resolution = '1920x1080'
     category = 'nature'
